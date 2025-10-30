@@ -1,70 +1,126 @@
-body, h1, h2, p{
+body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 body {
-    background: linear-gradient(135deg, #e3f6fc 0%, #fff 100%);
+    background: linear-gradient(180deg, #ffdede 0%, #c1ffdc 100%);
     color: #222;
     min-height: 100vh;
+    line-height: 1.6;
 }
 
 nav {
-    background: linear-gradient(90deg, #ff6600 0%, #0057b7 100%);
+    background: linear-gradient(90deg, #ff4500 0%, #0057b7 100%);
     padding: 18px 0;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    border-radius: 0 0 10px 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0 12px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffdd00;
 }
 
 .container {
-    max-width: 720px;
-    margin: 40px auto;
-    background: #fff;
-    border-radius: 14px;
-    box-shadow: 0 4px 24px rgba(0,87,183,0.10);
-    padding: 38px 34px;
+    max-width: 760px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0,87,183,0.12);
+    padding: 40px 36px;
     text-align: center;
     border: 3px solid #ff6600;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+.container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 36px rgba(0,87,183,0.18);
 }
 
 h1 {
     color: #0057b7;
     font-size: 2.6em;
-    margin-bottom: 10px;
-    text-shadow: 1px 2px 0 #fff, 2px 4px 0 #ff6600;
+    margin-bottom: 12px;
+    text-shadow: 1px 2px 0 #ffffff, 2px 4px 0 #ff6600;
 }
 
 h2 {
     color: #ff6600;
-    font-size: 1.4em;
-    margin-bottom: 22px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
     font-weight: 500;
-    text-shadow: 1px 1px 0 #fff;
+    text-shadow: 1px 1px 0 #ffffff;
 }
 
 p {
-    font-size: 1.13em;
+    font-size: 1.15em;
     line-height: 1.7;
-    color: #333;
-    margin-bottom: 28px;
+    color: #333333;
+    margin-bottom: 26px;
+}
+
+ul {
+    margin: 20px 0 30px 20px;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 8px;
 }
 
 .sk-ww-google-reviews {
-    background: linear-gradient(90deg, #00b140 0%, #e3f6fc, #ff6600 100%);
+    background: linear-gradient(90deg, #00b140 0%, #ffffff 50%, #ff6600 100%);
     color: #fff !important;
     border: none;
-    border-radius: 6px;
-    padding: 10px 22px;
+    border-radius: 8px;
+    padding: 12px 24px;
     font-size: 1em;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: background 0.3s, transform 0.2s;
     text-decoration: none;
     display: inline-block;
 }
+
+.sk-ww-google-reviews:hover {
+    background: linear-gradient(90deg, #ff6600 0%, #ffffff 50%, #00b140 100%);
+    transform: translateY(-2px);
+}
+
+.button {
+    background-color: #ff6600;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #00b140;
+    transform: translateY(-2px);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
